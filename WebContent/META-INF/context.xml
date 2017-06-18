@@ -1,0 +1,15 @@
+<Context>
+	<Resource name="jdbc/gmfdb" 
+		auth="Container" 
+		type="javax.sql.DataSource"
+		factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+		username="gmf" 
+		password="gmf" 
+		driverClassName="com.mysql.jdbc.Driver" 
+		url="jdbc:mysql://54.68.228.237:3306/gmfdb?noAccessToProcedureBodies=true" 
+		maxActive="100" 
+		maxIdle="15"
+	    testOnBorrow="true"
+        testOnReturn="false"
+        testWhileIdle="true"/>
+</Context>
